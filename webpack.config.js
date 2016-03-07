@@ -6,7 +6,7 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 module.exports = {
   entry: [
-    './app/index.jsx'
+    './app/index.js'
   ],
   output: {
     path: __dirname + '/dist',
@@ -14,7 +14,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.jsx$/, exclude: /node_modules/, loader: "babel-loader"}
+      {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
     ]
   },
   plugins: [HTMLWebpackPluginConfig]
